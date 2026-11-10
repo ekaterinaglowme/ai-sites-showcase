@@ -1,0 +1,556 @@
+{
+  "source": "https://elatro.ru/",
+  "description": "Coordinates of published project markers from the elatro.ru homepage",
+  "project_count": 61,
+  "projects": [
+    {
+      "id": "352",
+      "lat": 56.173843,
+      "lon": 37.499803,
+      "title": "КАНАЛ ИМ. МОСКВЫ",
+      "description": "Московская обл., г. Икша",
+      "year": "2017",
+      "source_url": "https://elatro.ru/completed/kanal-im-moskvy/"
+    },
+    {
+      "id": "349",
+      "lat": 55.797007,
+      "lon": 37.938118,
+      "title": "ОАО \"МОСОБЛЭНЕРГОГАЗ\"",
+      "description": "Московская обл., г. Балашиха",
+      "year": "2017",
+      "source_url": "https://elatro.ru/completed/oao-mosoblenergogaz-/"
+    },
+    {
+      "id": "194",
+      "lat": 43.284663,
+      "lon": 45.179366,
+      "title": "ООО \"ЧЕЧЕНСКИЕ МИНЕРАЛЬНЫЕ ВОДЫ\", ООО \"РОЛТ\"",
+      "description": "Чеченская Республика, Серноводский р-н",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/ooo-belaya-dacha-ooo-rolt/"
+    },
+    {
+      "id": "94",
+      "lat": 43.905518,
+      "lon": 42.715718,
+      "title": "ООО \"БЕЛАЯ ДАЧА\", ООО \"РОЛТ\"",
+      "description": "Ставропольский край, г. Кисловодск",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/ooo-belaya-dacha-ooo-rolt-old/"
+    },
+    {
+      "id": "348",
+      "lat": 55.760565,
+      "lon": 37.85506,
+      "title": "ЗАО \"ЭНЕРГОТЕХМОНТАЖ-ХОЛДИНГ\"",
+      "description": "Московская обл., г. Реутов",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/zao-energotekhmontazh-kholding-1/"
+    },
+    {
+      "id": "347",
+      "lat": 46.347614,
+      "lon": 48.030178,
+      "title": "ООО \"ЭЛЕКОМ\"",
+      "description": "Астраханская обл., г. Астрахань",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/ooo-elekom/"
+    },
+    {
+      "id": "346",
+      "lat": 55.755864,
+      "lon": 37.617698,
+      "title": "АО \"НИИ ПАРАШЮТОСТРОЕНИЯ\"",
+      "description": "Москва",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/ao-nii-parashyutostroeniya-1/"
+    },
+    {
+      "id": "345",
+      "lat": 53.100762,
+      "lon": 91.412204,
+      "title": "ОАО \"РУСАЛ САЯНАЛ\"",
+      "description": "Республика Хакассия, г. Саяногорск",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/oao-rusal-sayanal-1/"
+    },
+    {
+      "id": "344",
+      "lat": 55.095276,
+      "lon": 38.765574,
+      "title": "ООО \"РОЛТ\"",
+      "description": "Московская обл., г. Коломна",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/ooo-rolt-1/"
+    },
+    {
+      "id": "343",
+      "lat": 55.760565,
+      "lon": 37.85506,
+      "title": "ЗАО \"МОЭГ\"",
+      "description": "Московская обл., г. Реутов",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/zao-moeg-1/"
+    },
+    {
+      "id": "342",
+      "lat": 56.444862,
+      "lon": 59.125926,
+      "title": "ОАО \"УРАЛЬСКАЯ ФОЛЬГА\"",
+      "description": "Свердловская обл., г. Михайловск",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/oao-uralskaya-folga-3/"
+    },
+    {
+      "id": "341",
+      "lat": 56.444862,
+      "lon": 59.125926,
+      "title": "ОАО \"УРАЛЬСКАЯ ФОЛЬГА\"",
+      "description": "Свердловская обл., г. Михайловск",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/oao-uralskaya-folga-2/"
+    },
+    {
+      "id": "340",
+      "lat": 46.347614,
+      "lon": 48.030178,
+      "title": "ОАО \"ЛУКОЙЛ\"",
+      "description": "Астраханская обл., г. Астрахань",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/oao-lukoyl-1/"
+    },
+    {
+      "id": "339",
+      "lat": 56.444862,
+      "lon": 59.125926,
+      "title": "ОАО \"УРАЛЬСКАЯ ФОЛЬГА\"",
+      "description": "Свердловская обл., г. Михайловск",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/oao-uralskaya-folga-1/"
+    },
+    {
+      "id": "338",
+      "lat": 55.746436,
+      "lon": 38.009049,
+      "title": "ООО \"ЭНЕРГОСТРОЙ\"",
+      "description": "Московская обл., г. Железнодорожный",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/ooo-energostroy/"
+    },
+    {
+      "id": "337",
+      "lat": 50.820301,
+      "lon": 60.861489,
+      "title": "ООО \"БУРУКТАЛЬСКИЙ НИКЕЛЕВЫЙ ЗАВОД\"",
+      "description": "Оренбургская обл., Светлинский р-н, п. Светлый",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/ooo-buruktalskiy-nikelevyy-zavod/"
+    },
+    {
+      "id": "336",
+      "lat": 55.180953,
+      "lon": 36.655549,
+      "title": "\"FS SYSTEM КЕРАМИКА БУДУЩЕГО\"",
+      "description": "Калужская обл., г. Балабаново",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/fs-system-keramika-budushchego/"
+    },
+    {
+      "id": "335",
+      "lat": 68.45972,
+      "lon": 73.59028,
+      "title": "ГАЗПРОМ, НОВЫЙ ПОРТ",
+      "description": "сельское поселение Мыс-Каменское, Мыс Каменный",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/gazprom-novyy-port/"
+    },
+    {
+      "id": "334",
+      "lat": 56.173843,
+      "lon": 37.499803,
+      "title": "ОАО \"БАЛТИК СГЭМ\"",
+      "description": "Московская обл., г. Икша",
+      "year": "2015",
+      "source_url": "https://elatro.ru/completed/oao-baltik-sgem-2/"
+    },
+    {
+      "id": "333",
+      "lat": 45.237888,
+      "lon": 37.1575,
+      "title": "ОАО \"ЭФКО\"",
+      "description": "Краснодарский край, Темрюкский р-н",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/oao-efko/"
+    },
+    {
+      "id": "332",
+      "lat": 43.024616,
+      "lon": 44.681771,
+      "title": "ЗАО \"МОСОБЛЭНЕРГОГАЗ\"",
+      "description": "Республика Северная Осетия-Алания, г. Владикавказ",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/zao-mosoblenergogaz/"
+    },
+    {
+      "id": "331",
+      "lat": 43.024616,
+      "lon": 44.681771,
+      "title": "ЩЕБЕНОЧНЫЙ КАРЬЕР",
+      "description": "Республика Северная Осетия-Алания, г. Владикавказ",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/shchebenochnyy-karer/"
+    },
+    {
+      "id": "330",
+      "lat": 50.820301,
+      "lon": 60.861489,
+      "title": "ООО \"БУРУКТАЛЬСКИЙ НИКЕЛЕВЫЙ ЗАВОД\"",
+      "description": "Оренбургская обл., Светлинский р-н, п. Светлый",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/ooo-buruktalskiy-nikelevyy-zavod-/"
+    },
+    {
+      "id": "329",
+      "lat": 56.173843,
+      "lon": 37.499803,
+      "title": "ОАО \"БАЛТИК СГЭМ\"",
+      "description": "Московская обл., г. Икша",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/oao-baltik-sgem-1/"
+    },
+    {
+      "id": "328",
+      "lat": 55.755864,
+      "lon": 37.617698,
+      "title": "ЗАО \"ДИДЖИТАЛ НЕТВОРК\"",
+      "description": "Москва",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/zao-didzhital-netvork/"
+    },
+    {
+      "id": "327",
+      "lat": 71.25,
+      "lon": 72.0,
+      "title": "ООО \"ПЕНТЕИР РУС\"",
+      "description": "г. Южно-Тамбейск",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/ooo-penteir-rus/"
+    },
+    {
+      "id": "326",
+      "lat": 54.187433,
+      "lon": 45.183938,
+      "title": "ООО \"ЮБИЛЕЙНОЕ\"",
+      "description": "Республика Мордовия, г. Саранск",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/ooo-yubileynoe/"
+    },
+    {
+      "id": "325",
+      "lat": 50.595414,
+      "lon": 36.587277,
+      "title": "ОАО \"БЕЛГРАНКОРМ\"",
+      "description": "Белгородская обл., г. Белгород",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/oao-belgrankorm/"
+    },
+    {
+      "id": "324",
+      "lat": 55.918081,
+      "lon": 39.175745,
+      "title": "ООО \"КРАФТ ФУДС\"",
+      "description": "Владимирская обл., г. Покров",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/ooo-kraft-fuds/"
+    },
+    {
+      "id": "323",
+      "lat": 56.173843,
+      "lon": 37.499803,
+      "title": "ОАО \"БАЛТИК СГЭМ\"",
+      "description": "Московская обл., г. Икша",
+      "year": "2014",
+      "source_url": "https://elatro.ru/completed/oao-baltik-sgem/"
+    },
+    {
+      "id": "351",
+      "lat": 47.222109,
+      "lon": 39.718813,
+      "title": "РОСТОВ ВОДОКАНАЛ, ООО \"РОЛТ\"",
+      "description": "Ростовская обл., г. Ростов-на-Дону",
+      "year": "2017",
+      "source_url": "https://elatro.ru/completed/rostov-vodokanal-ooo-rolt/"
+    },
+    {
+      "id": "1808",
+      "lat": 55.755864,
+      "lon": 37.617698,
+      "title": "Распределительная подстанция ЖК, 10/04 кВ",
+      "description": "Москва",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/raspredelitelnaya-podstantsiya-zhk-10-04-kv/"
+    },
+    {
+      "id": "1803",
+      "lat": 55.755864,
+      "lon": 37.617698,
+      "title": "Изготовление распределительной подстанции 10 кВ",
+      "description": "Москва",
+      "year": "2025",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-raspredelitelnoy-podstantsii-10-kvq/"
+    },
+    {
+      "id": "350",
+      "lat": 55.755864,
+      "lon": 37.617698,
+      "title": "АО \"МОСВОДОКАНАЛ\"",
+      "description": "Москва",
+      "year": "2017",
+      "source_url": "https://elatro.ru/completed/ao-mosvodokanal-/"
+    },
+    {
+      "id": "1816",
+      "lat": 58.010455,
+      "lon": 56.229443,
+      "title": "Изготовление и монтаж трансформаторных подстанций 6 кВ 2х1600 и 2х2500 кВа",
+      "description": "Пермь",
+      "year": "2025",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-transformatornykh-podstantsiy-6-kv-2kh1600-i-2kh2500-kva/"
+    },
+    {
+      "id": "1815",
+      "lat": 69.343985,
+      "lon": 88.210393,
+      "title": "Изготовление системы плавного пуска  мультистарт 6 кВ",
+      "description": "Красноярский край, г. Норильск",
+      "year": "2022",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-sistemy-plavnogo-puska-multistart-6-kvr/"
+    },
+    {
+      "id": "1814",
+      "lat": 62.02722,
+      "lon": 129.732181,
+      "title": "Изготовление 12 комплектов УПП 6 кв",
+      "description": "Республика Саха (Якутия)",
+      "year": "2022",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-12-komplektov-upp-6-kv/"
+    },
+    {
+      "id": "1813",
+      "lat": 55.637576,
+      "lon": 51.819712,
+      "title": "Изготовление РУ 10кВ, с БАВР",
+      "description": "Республика Татарстан, г. Нижнекамск",
+      "year": "2022",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-ru-10kv-s-bavr/"
+    },
+    {
+      "id": "1812",
+      "lat": 54.193122,
+      "lon": 37.617348,
+      "title": "Изготовление комплектов УПП 6 кВ",
+      "description": "Тула",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-komplektov-upp-6-kv/"
+    },
+    {
+      "id": "1811",
+      "lat": 53.407163,
+      "lon": 58.980291,
+      "title": "Изготовление УПП 6 кВ",
+      "description": "Челябинская обл., г. Магнитогорск",
+      "year": "2022",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-upp-6-kv/"
+    },
+    {
+      "id": "1810",
+      "lat": 67.568023,
+      "lon": 33.407187,
+      "title": "Изготовление КРУн 10 кВ для РОССЕТИ",
+      "description": "Мурманская обл., г. Апатиты",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-krun-10-kv-dlya-rosseti/"
+    },
+    {
+      "id": "1809",
+      "lat": 52.608826,
+      "lon": 39.599229,
+      "title": "Изготовление и монтаж распределительной подстанции 10/0.4 кВ",
+      "description": "Липецк",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-raspredelitelnoy-podstantsii-10-0-4-kv/"
+    },
+    {
+      "id": "1807",
+      "lat": 44.270312,
+      "lon": 43.978516,
+      "title": "Изготовление и монтаж комплекта оборудования для малой генерации, 0,4, 10 кВ, АСУ тп",
+      "description": "Ставропольский край, с. Горькая Балка",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-komplekta-oborudovaniya-dlya-maloy-generatsii-0-4-10-kv-asu-tp/"
+    },
+    {
+      "id": "1806",
+      "lat": 45.12236,
+      "lon": 42.848354,
+      "title": "Изготовление и монтаж комплекта оборудования для малой генерации, 0,4, 10 кВ, АСУ тп, УПП 10 кВ",
+      "description": "Ставропольский край, с. Просянка",
+      "year": "2023",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-komplekta-oborudovaniya-dlya-maloy-generatsii-0-4-10-kv-asu-tp-upp-10-kv/"
+    },
+    {
+      "id": "1805",
+      "lat": 58.04864,
+      "lon": 38.855711,
+      "title": "Изготовление и монтаж распределительной подстанции 6/0,4 кВ",
+      "description": "Ярославская обл., г. Рыбинск",
+      "year": "2024",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-raspredelitelnoy-podstantsii-6-0-4-kv/"
+    },
+    {
+      "id": "1804",
+      "lat": 55.879864,
+      "lon": 38.78037,
+      "title": "Проектирование, изготовление распределительной подстанции, 2500 А, 10 кВ",
+      "description": "Московская обл., г. Электрогорск",
+      "year": "2024",
+      "source_url": "https://elatro.ru/completed/proektirovanie-izgotovlenie-raspredelitelnoy-podstantsii-2500-a-10-kv/"
+    },
+    {
+      "id": "1802",
+      "lat": 44.780184,
+      "lon": 44.163129,
+      "title": "Проектирование и монтаж энергоцентра 10 кВ",
+      "description": "Ставропольский край, г. Будённовск",
+      "year": "2020",
+      "source_url": "https://elatro.ru/completed/proektirovanie-i-montazh-energotsentra-10-kv/"
+    },
+    {
+      "id": "1800",
+      "lat": 54.513678,
+      "lon": 36.261341,
+      "title": "Проектирование, изготовление, монтаж систем электроснабжения завода, 10 кВ",
+      "description": "Калуга",
+      "year": "2018",
+      "source_url": "https://elatro.ru/completed/proektirovanie-izgotovlenie-montazh-sistem-elektrosnabzheniya-zavoda-10-kv/"
+    },
+    {
+      "id": "1799",
+      "lat": 59.938784,
+      "lon": 30.314997,
+      "title": "Изготовление системы плавного пуска мультистарт 6 кВ",
+      "description": "Санкт-Петербург",
+      "year": "2020",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-sistemy-plavnogo-puska-multistart-6-kv/"
+    },
+    {
+      "id": "1798",
+      "lat": 44.208806,
+      "lon": 43.13834,
+      "title": "Проектирование, монтаж распределительного устройства 10 кВ",
+      "description": "Ставропольский край, г. Минеральные Воды",
+      "year": "2021",
+      "source_url": "https://elatro.ru/completed/proektirovanie-montazh-raspredelitelnogo-ustroystva-10-kv/"
+    },
+    {
+      "id": "1797",
+      "lat": 41.311151,
+      "lon": 69.279737,
+      "title": "Проектирование и изготовление системы плавного пуска мультистарт 10 кВ",
+      "description": "Узбекистан",
+      "year": "2021",
+      "source_url": "https://elatro.ru/completed/proektirovanie-i-izgotovlenie-sistemy-plavnogo-puska-multistart-10-kv/"
+    },
+    {
+      "id": "1796",
+      "lat": 67.493511,
+      "lon": 64.050176,
+      "title": "Изготовление распределительной подстанции 10 кВ",
+      "description": "Республика Коми, Воркута",
+      "year": "2019",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-raspredelitelnoy-podstantsii-10-kv/"
+    },
+    {
+      "id": "1795",
+      "lat": 54.778263,
+      "lon": 32.051054,
+      "title": "Изготовление и монтаж распределительной подстанции 10 кВ",
+      "description": "Смоленск",
+      "year": "2020",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-raspredelitelnoy-podstantsii-10-kvv/"
+    },
+    {
+      "id": "1793",
+      "lat": 50.595414,
+      "lon": 36.587277,
+      "title": "Изготовление насосной станции контроля перелива пульпы, 10 кВ",
+      "description": "Белгород",
+      "year": "2021",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-nasosnoy-stantsii-kontrolya-pereliva-pulpy-10-kv/"
+    },
+    {
+      "id": "1792",
+      "lat": 54.88628,
+      "lon": 38.078237,
+      "title": "Изготовление и монтаж распределительного оборудования ЭНЕРГОЦЕНТРА, 10 кВ",
+      "description": "Московская обл., г. Ступино",
+      "year": "2021",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-raspredelitelnogo-oborudovaniya-energotsentra-10-kv/"
+    },
+    {
+      "id": "1788",
+      "lat": 53.195878,
+      "lon": 50.100202,
+      "title": "Изготовление системы управления насосными агрегатами, напряжение 0.4 кВ",
+      "description": "Самара",
+      "year": "2019",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-sistemy-upravleniya-nasosnymi-agregatami-napryazhenie-0-4-kv/"
+    },
+    {
+      "id": "1787",
+      "lat": 52.289588,
+      "lon": 104.280606,
+      "title": "Проектировние и изготовление РП с системой плавного пуска , на напряжение 10 кВ",
+      "description": "Иркутск",
+      "year": "2019",
+      "source_url": "https://elatro.ru/completed/proektirovnie-i-izgotovlenie-rp-s-sistemoy-plavnogo-puska-na-napryazhenie-10-kv/"
+    },
+    {
+      "id": "1786",
+      "lat": 53.195878,
+      "lon": 50.100202,
+      "title": "Изготовление распеределительной подстанции, совмещенная с системой управления насосными агрегатами",
+      "description": "Самара",
+      "year": "2020",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-rasperedelitelnoy-podstantsii-sovmeshchennaya-s-sistemoy-upravleniya-nasosnymi-agregata/"
+    },
+    {
+      "id": "1785",
+      "lat": 53.195878,
+      "lon": 50.100202,
+      "title": "Производство распределительной подстанции для ЖД станции",
+      "description": "Самара",
+      "year": "2019",
+      "source_url": "https://elatro.ru/completed/proizvodstvo-raspredelitelnoy-podstantsii-dlya-zhd-stantsii/"
+    },
+    {
+      "id": "1784",
+      "lat": 52.608826,
+      "lon": 39.599229,
+      "title": "Изготовление и монтаж распределительной подстанции 10 кВ",
+      "description": "Липецк",
+      "year": "2022",
+      "source_url": "https://elatro.ru/completed/izgotovlenie-i-montazh-raspredelitelnoy-podstantsii-10-kv/"
+    },
+    {
+      "id": "197",
+      "lat": 53.100762,
+      "lon": 91.412204,
+      "title": "ОАО \"РУСАЛ САЯНАЛ\"",
+      "description": "Республика Хакассия, г. Саяногорск",
+      "year": "2016",
+      "source_url": "https://elatro.ru/completed/oao-rusal-sayanal/"
+    }
+  ]
+}
