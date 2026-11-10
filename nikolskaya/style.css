@@ -14,3 +14,13 @@
 .curriculum li strong{font:inherit;font-weight:600}
 .curriculum li span{display:block;color:var(--muted);font-size:14px;line-height:1.45;letter-spacing:0}
 @media(max-width:620px){.curriculum li span{font-size:13px}}
+
+/* AI tools on the first screen */
+.hero-ai-tools{position:relative;z-index:2;align-self:center;width:min(560px,100%);margin:0 0 34px}
+.hero-ai-tools-label{display:block;margin-bottom:13px;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:.12em;text-align:center}
+.hero-ai-tools-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0}
+.hero-ai-tool{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0;color:var(--ink)}
+.hero-ai-tool img{display:block;width:36px;height:36px;object-fit:contain;flex:none}
+.hero-ai-tool span{font-size:10px;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+@media(max-width:620px){.hero-ai-tools{width:100%;margin-bottom:27px}.hero-ai-tools-label{font-size:9px;margin-bottom:11px}.hero-ai-tools-list{gap:3px;padding:12px 0}.hero-ai-tool{flex-direction:column;gap:5px}.hero-ai-tool img{width:38px;height:38px}.hero-ai-tool span{font-size:9px}}
+@media(max-width:620px){.hero-mark{top:23%}}
