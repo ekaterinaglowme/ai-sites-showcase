@@ -1,0 +1,13 @@
+{
+  "keyword": "сайт",
+  "status": "not_activated",
+  "google_drive": "awaiting_connection_upload_not_done",
+  "dm": "Вот гайд «Ваш сайт с ИИ» 💙 {guide_url}",
+  "comment_reply": "Отправила гайд в директ 💙",
+  "order": [
+    "send_dm",
+    "verify_success",
+    "reply_to_original_comment"
+  ],
+  "reel_id": null
+}
