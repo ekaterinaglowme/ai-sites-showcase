@@ -1,0 +1,39 @@
+.site-preloader {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  place-content: center;
+  justify-items: center;
+  gap: 18px;
+  padding: 24px;
+  background: var(--loader-bg, #090909);
+  color: var(--loader-text, #f3f2ee);
+  text-align: center;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+.is-loading .site-preloader { display: grid; }
+.site-preloader.is-ready { opacity: 0; }
+.site-preloader strong {
+  font: var(--loader-font, 700 clamp(44px, 10vw, 116px)/1.05 Oswald, Arial, sans-serif);
+}
+.site-preloader span { font: 12px/1.4 Arial, sans-serif; letter-spacing: .16em; }
+.site-preloader::after {
+  content: "";
+  width: min(160px, 50vw);
+  height: 2px;
+  background: currentColor;
+  opacity: .65;
+  animation: loader-pulse .9s ease-in-out infinite alternate;
+}
+.school-preloader {
+  --loader-bg: #f4efe5;
+  --loader-text: #26221c;
+  --loader-font: 500 clamp(32px, 7vw, 86px)/1.1 "Cormorant Garamond", Georgia, serif;
+}
+@keyframes loader-pulse { from { transform: scaleX(.3); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .site-preloader { transition: none; }
+  .site-preloader::after { animation: none; }
+}

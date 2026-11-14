@@ -42,3 +42,7 @@
 /* Shared left grid for hero and all editorial sections. */
 :root{--page-gutter:5vw}.header,.hero,.about,.work,.course,.contact,footer{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
 @media(max-width:650px){:root{--page-gutter:20px}}
+
+@media (max-width: 650px) {
+  .hero-head { align-self: center; margin: -10px auto 0; }
+}
