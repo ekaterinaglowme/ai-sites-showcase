@@ -38,3 +38,5 @@
 .hero .scroll-cue{height:45px;margin:20px auto 0}
 @media(max-width:600px){.hero{padding:100px 16px 30px;display:block}.hero-stage{height:68svh;min-height:430px;margin:0}.hero h1{font-size:13.2vw;gap:14px}.hero .hero-photo{width:37%;height:53%;max-width:none;aspect-ratio:auto}.hero .hero-photo-1{left:0;top:3%}.hero .hero-photo-2{right:0;top:12%}.hero .hero-photo-3{left:32%;top:39%;width:40%;height:52%}.hero h1>span:last-child{font-size:1.14em}.hero .scroll-cue{margin-top:22px}}
 @media(prefers-reduced-motion:reduce){.hero .hero-photo{transform:none!important;will-change:auto}}
+
+.school-name{display:block;color:#191914;font-family:Georgia,serif;font-size:24px;font-weight:700;line-height:1.2;letter-spacing:-.025em;text-align:center;margin-top:9px;text-decoration:none}@media(max-width:600px){.school-name{font-size:18px;margin-top:8px;max-width:calc(100% - 110px)}}
