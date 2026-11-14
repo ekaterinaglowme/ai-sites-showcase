@@ -33,7 +33,7 @@ personal_prompts=re.findall(r'```text\n(.*?)\n```',personal_section,re.S)
 project_prompts=re.findall(r'```text\n(.*?)\n```',project_section,re.S)
 assert len(personal_prompts)==2 and len(project_prompts)==1
 for prompt,filename,markdown_file,note in [
- (personal_prompts[0], 'Промпт-3D-аватар.txt', 'PROMPT-3D-AVATAR.md', 'Приложите своё чёткое фото лица и доработайте результат в чате до сохранения.'),
+ (personal_prompts[0], 'Промпт-3D-аватар.txt', 'PROMPT-3D-AVATAR.md', 'Приложите своё чёткое фото лица и полную картинку-образец с аватаром и текстом из гайда, затем доработайте результат в чате до сохранения.'),
  (personal_prompts[1], 'Промпт-сайт-визитка.txt', 'PROMPT-PERSONAL-WEBSITE.md', 'Приложите готовый 3D-аватар и отдельную обычную фотографию для блока «Обо мне».'),
  (project_prompts[0], 'Промпт-сайт-проекта.txt', 'PROMPT-COMPANY-WEBSITE.md', 'Установите скиллы по гайду, заполните поля и приложите фотографии проекта.'),
 ]:
