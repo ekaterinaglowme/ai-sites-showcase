@@ -1,5 +1,7 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Сайт с ИИ — гайд и промпты</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101212;color:#f4f4ef;font:18px/1.7 Arial,sans-serif}main{max-width:1040px;margin:auto;padding:64px 28px}h1{font-size:clamp(42px,7vw,80px);line-height:1.02;letter-spacing:-.04em;max-width:850px}h2{font-size:clamp(29px,4vw,44px);line-height:1.15;margin-top:85px;padding-top:30px;border-top:1px solid #3a424a}h3{font-size:24px;margin-top:36px}a{color:#a7c5ff;text-underline-offset:4px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#1d242c;padding:28px;border-left:3px solid #91afff;font:16px/1.65 Arial;position:relative}code{font:inherit}table{width:100%;border-collapse:collapse;font-size:16px}td,th{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid #3a424a;overflow-wrap:anywhere}li{margin:10px 0}.brand{color:#91afff;font-weight:bold;letter-spacing:.08em;font-size:13px}.tools{display:flex;gap:15px;flex-wrap:wrap}.copy{background:#91afff;color:#101212;border:0;padding:12px 20px;border-radius:30px;cursor:pointer;font-weight:bold;font-size:15px}.code-wrap{margin:28px 0}.code-wrap pre{margin-top:12px}.hint{color:#aebaca;font-size:15px}.shot{width:100%;max-height:520px;object-fit:contain;background:#080909;margin:24px 0} @media(max-width:600px){main{padding:35px 20px}pre{padding:18px;font-size:15px}table{font-size:13px}td,th{padding:7px}h2{margin-top:55px}} @media print{@page{size:A4;margin:16mm}html,body{background:#101212!important;color:#f4f4ef!important;font-size:10pt}main{padding:0;max-width:none}h1{font-size:36pt}h2{font-size:23pt;margin-top:12mm;break-after:avoid}h3{break-after:avoid}pre{font-size:9pt;background:#1d242c;color:#f4f4ef;white-space:pre-wrap;break-inside:auto;padding:4mm}a{color:#235294}.copy,.tools,.hint{display:none}table{font-size:9pt}.shot{max-height:70mm} }
 .site-example{margin:30px 0 40px;break-inside:avoid}.site-example .shot{display:block;margin:0 0 12px}.site-example figcaption{font-size:15px;color:#aebaca;line-height:1.5}
+
+.install-shot{display:block;width:100%;height:auto;margin:24px 0;border:1px solid #47515c;break-inside:avoid}@media print{.install-shot{max-height:125mm;object-fit:contain}}
 </style></head><body><main><div class="brand">@NIKOLSKAYA.AI · УРОК 01</div><div class="tools"><a href="Гайд-и-все-промпты.txt">Скачать весь текст</a><a href="Ваш-сайт-с-ИИ-полный-гайд.pdf">PDF для сохранения</a></div><h1>Ваш первый сайт с ИИ: визитка и сайт проекта</h1>
 <p>Здесь всё по порядку: <strong>установите два скилла → выберите дизайн → заполните один промпт → прикрепите фотографии и отправьте его</strong>. Установка скиллов — отдельный подготовительный шаг. В промпте для сайта уже только само задание.</p>
 <h2>1. Перед началом установите скиллы и выберите референс</h2>
@@ -8,12 +10,15 @@
 <li><strong><a href="https://github.com/elayadesign/ai-design-skills/tree/main/skills/landing-page-design">Landing Page Design — открыть скилл</a></strong> — структура страницы и подача информации.</li>
 <li><strong><a href="https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill">Taste Skill — открыть скилл</a></strong> — композиция, типографика и визуальная проверка.</li>
 </ul>
-<h3>Как установить: один отдельный шаг</h3>
+<h3>Нужен ли аккаунт GitHub?</h3>
+<p><strong>Нет. Оба скилла лежат в публичных репозиториях: их можно открыть и скачать без регистрации.</strong> GitHub здесь — просто место, где автор хранит файлы. Нажимать Sign up, создавать свой репозиторий и подключать GitHub к Codex для этого шага не нужно. Нужен вход в приложение, в котором вы работаете с Codex.</p>
+<h3>Способ 1 — проще всего: отправьте запрос в Codex</h3>
+<p>Обычный чат ChatGPT может объяснить установку, но сам по себе не установит файлы на ваш компьютер. <strong>Запрос ниже отправляйте в Codex с доступом к локальным файлам.</strong> Если вы работаете в ChatGPT, сначала откройте режим Codex, как в официальном быстром старте. Ручное скачивание ZIP при этом не требуется.</p>
 <ol>
 <li>Откройте Codex и создайте чат. Если приложение ещё не установлено, начните с <a href="https://learn.chatgpt.com/docs/quickstart">официального быстрого старта</a>.</li>
 <li>Скопируйте запрос ниже и отправьте его <strong>отдельным сообщением, до промпта сайта</strong>. Вручную скачивать папки не нужно — попросим Codex сделать это.</li>
 <li>Дождитесь сообщения об успешной установке обоих навыков. Если приложение предложит подтвердить установку, проверьте названия и подтвердите.</li>
-<li>Начните новый чат, чтобы установленные навыки стали доступны. Если они не появились, перезапустите приложение. Проверка: напишите «Покажи, доступны ли landing-page-design и design-taste-frontend». При ошибке установки сначала попросите её исправить.</li>
+<li>Следующим сообщением напишите: «Проверь, доступны ли landing-page-design и design-taste-frontend. Покажи названия и пути к их SKILL.md». Если навыки не появились, начните новый чат или перезапустите приложение. Не переходите к сайту, пока установка не подтверждена.</li>
 <li>Теперь переходите к материалам и промпту выбранного сайта ниже. Повторять установку для каждого нового сайта не нужно.</li>
 </ol>
 <p><strong>Это запрос только для установки скиллов:</strong></p>
@@ -23,6 +28,38 @@
 Прочитай инструкции авторов, выполни установку и проверь результат. Сообщи отдельно о каждом навыке и объясни, нужен ли перезапуск приложения. Сайт на этом шаге не создавай.
 </code></pre>
 <p><a href="https://learn.chatgpt.com/docs/build-skills">Официальная инструкция по скиллам</a>. Дополнительный навык <a href="https://github.com/Nutlope/hallmark/tree/main/skills/hallmark">Hallmark</a> — альтернативный подход к дизайну; для этого урока он не требуется.</p>
+<h3>Где находятся скиллы: ссылки и скриншоты</h3>
+<p>Красной рамкой выделено, куда смотреть или нажимать. Скриншоты сделаны без входа в GitHub. Надписи на GitHub могут быть на английском — названия кнопок ниже приведены точно.</p>
+<p><strong>1. Landing Page Design — структура лендинга</strong></p>
+<p><a href="https://github.com/elayadesign/ai-design-skills">Открыть репозиторий ai-design-skills</a> · <a href="https://github.com/elayadesign/ai-design-skills/tree/main/skills/landing-page-design">Открыть сам скилл landing-page-design</a></p>
+<p><a href="https://github.com/elayadesign/ai-design-skills/tree/main/skills/landing-page-design"><img class="install-shot" src="install/landing-skill.png" alt="Папка landing-page-design: выделен файл инструкции SKILL.md"></a></p>
+<p><strong>2. Taste Skill — визуальный дизайн</strong></p>
+<p><a href="https://github.com/Leonxlnx/taste-skill">Открыть репозиторий taste-skill</a> · <a href="https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill">Открыть сам скилл taste-skill</a></p>
+<p>Название папки — <code>taste-skill</code>, а имя навыка внутри — <code>design-taste-frontend</code>. Это один и тот же скилл, не нужно искать третий.</p>
+<p><a href="https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill"><img class="install-shot" src="install/taste-skill.png" alt="Папка taste-skill: выделен файл SKILL.md"></a></p>
+<h3>Способ 2 — скачать ZIP, если установка по ссылке не сработала</h3>
+<p>Этот способ запасной. Если первый уже сработал, пропустите его.</p>
+<ol>
+<li>Откройте <strong>репозиторий</strong> первого скилла по ссылке выше.</li>
+<li>Нажмите зелёную кнопку <strong>Code</strong>. Это меню скачивания, а не кнопка установки.</li>
+<li>В меню нажмите <strong>Download ZIP</strong>. Сохраните архив в «Загрузки».</li>
+<li>Повторите для второго репозитория.</li>
+<li>В Codex прикрепите скачанные ZIP, если приложение это позволяет, или укажите точные пути к архивам в «Загрузках». Отправьте запрос под скриншотами.</li>
+</ol>
+<p><strong>Landing Page Design: Code → Download ZIP</strong></p>
+<p><a href="https://github.com/elayadesign/ai-design-skills"><img class="install-shot" src="install/landing-repo.png" alt="Шаг 1: в репозитории ai-design-skills выделена кнопка Code"></a></p>
+<p><a href="https://github.com/elayadesign/ai-design-skills"><img class="install-shot" src="install/landing-zip.png" alt="Шаг 2: в меню Code выделена команда Download ZIP"></a></p>
+<p><strong>Taste Skill: Code → Download ZIP</strong></p>
+<p><a href="https://github.com/Leonxlnx/taste-skill"><img class="install-shot" src="install/taste-repo.png" alt="Шаг 1: в репозитории taste-skill выделена кнопка Code"></a></p>
+<p><a href="https://github.com/Leonxlnx/taste-skill"><img class="install-shot" src="install/taste-zip.png" alt="Шаг 2: в меню Code выделена команда Download ZIP"></a></p>
+<p><strong>После скачивания отправьте в Codex:</strong></p>
+<pre><code class="language-text">Установи два скилла из приложенных ZIP-архивов или по указанным мной локальным путям.
+В архиве ai-design-skills найди папку skills/landing-page-design.
+В архиве taste-skill найди папку skills/taste-skill — внутреннее имя навыка design-taste-frontend.
+Проверь инструкции авторов. Установи каждый навык целиком со вспомогательными папками и файлами, не только SKILL.md, в мою пользовательскую папку скиллов Codex. Если навык уже установлен, не перезаписывай его молча: проверь текущую версию и сообщи результат.
+Проверь оба навыка и покажи их названия и пути к SKILL.md. Объясни, нужен ли новый чат или перезапуск. Сайт пока не создавай.
+</code></pre>
+<p><strong>Как понять, что всё готово:</strong> Codex подтвердил установку обоих навыков и при проверке видит их инструкции. Просто открытая страница GitHub, скачанный архив или текст SKILL.md в переписке — ещё не установленный скилл.</p>
 <h3>Заранее посмотрите дизайн на Awwwards</h3>
 <p>Это те самые два референса, на основе которых мы делали сайты. Они нужны как визуальные примеры, скачивать шаблон или покупать его не нужно.</p>
 <ul>
@@ -30,6 +67,16 @@
 <li><strong><a href="https://www.awwwards.com/sites/where-opportunity-takes-root">Where Opportunity Takes Root — референс «Опоры»</a></strong>. Тёплый бумажный фон, крупная антиква, фотоколлаж и движение при прокрутке. Подойдёт школе, студии или другому проекту.</li>
 </ul>
 <p>Выберите один вариант. Его ссылка уже включена в соответствующий промпт. Подробное визуальное ТЗ внутри описывает нашу адаптацию, поэтому не нужно самостоятельно собирать инструкции по всему гайду. Для ещё более близкого результата можно приложить скриншот понравившегося экрана.</p>
+<h3>На чём будет работать сайт?</h3>
+<p><strong>В этом уроке мы создаём статический сайт на HTML, CSS и JavaScript, без React.</strong></p>
+<ul>
+<li><strong>HTML (<code>index.html</code>)</strong> — содержимое: заголовки, тексты, фотографии и разделы страницы.</li>
+<li><strong>CSS (<code>style.css</code>)</strong> — оформление: цвета, шрифты, отступы и расположение блоков на компьютере и телефоне.</li>
+<li><strong>JavaScript (<code>script.js</code>)</strong> — поведение: анимация за курсором, меню и другие интерактивные элементы. Простые раскрывающиеся блоки могут работать и средствами HTML.</li>
+<li><strong>Папка <code>images</code></strong> — фотографии и иллюстрации вашего сайта.</li>
+</ul>
+<p>Браузер открывает HTML, подключает стили, изображения и скрипт — и показывает страницу. <strong>React — отдельная библиотека для интерфейсов; для этой визитки она не требуется.</strong> Не нужно выбирать между «HTML или JavaScript»: здесь они выполняют разные задачи и работают вместе.</p>
+<p>Вы не пишете эти файлы вручную. Вы заполняете один промпт, прикладываете фото, а Codex создаёт файлы и запускает предпросмотр. Установка скиллов не добавляет их на сайт: они помогают Codex выполнить работу. Сайт пока находится на вашем компьютере; на втором уроке разберём GitHub и деплой — публикацию по общей ссылке. Форма, которая действительно отправляет заявки, потребовала бы отдельного сервиса; в этом уроке используем ссылки на ваши контакты.</p>
 <h2>2. Подготовьте свои материалы</h2>
 <p>Создайте на компьютере пустую папку, например <code>Мой сайт</code>. В отдельную папку <code>Материалы</code> сложите фотографии и логотип. Оригиналы сохраните у себя отдельно. Переименуйте файлы понятно: <code>portrait.jpg</code>, <code>work-01.jpg</code>, <code>product-01.png</code> и так далее.</p>
 <p>Для <strong>сайта-визитки</strong> нужны: имя, занятие в одном предложении, 2–4 направления работы, короткий рассказ о себе, основная ссылка для связи и портрет или готовый 3D-аватар для первого экрана. Работы или отзывы добавляйте только если они настоящие и их можно публиковать. Если аватара нет, используйте своё фото или заранее создайте отдельное изображение в 3D-стиле.</p>
