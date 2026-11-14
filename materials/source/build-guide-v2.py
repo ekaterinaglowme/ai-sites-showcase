@@ -1,11 +1,11 @@
 from pathlib import Path
-import markdown,fitz
+import markdown,fitz,re
 from playwright.sync_api import sync_playwright
 here=Path(__file__).resolve().parent
 root=here.parent
 body=markdown.markdown((here/'GUIDE-TWO-SITES-V2.md').read_text(),extensions=['tables','fenced_code'])
 for heading, image, caption in [
- ('4. Сайт-визитка — один цельный промпт', 'nikolskaya-1440.png', 'Сайт-визитка — Екатерина Никольская. Референс: готовый сайт Екатерины.'),
+ ('4. Сайт-визитка — два промпта по порядку', 'nikolskaya-1440.png', 'Сайт-визитка — Екатерина Никольская. Референс: готовый сайт Екатерины.'),
  ('5. Сайт проекта — один цельный промпт', 'opora-1440.png', 'Сайт проекта — школа «Опора». Референс: готовый сайт «Опора».'),
 ]:
  title = '<h2>' + heading + '</h2>'
@@ -27,10 +27,15 @@ d.save(str(target)+'.tmp');d.close();Path(str(target)+'.tmp').replace(target)
 # Synchronize every downloadable prompt from the canonical guide.
 source=(here/'GUIDE-TWO-SITES-V2.md').read_text()
 (here/'GUIDE-TWO-SITES-FROM-ZERO.md').write_text(source)
-for section, filename, markdown_file in [
- ('## 4.', 'Промпт-сайт-визитка.txt', 'PROMPT-PERSONAL-WEBSITE.md'),
- ('## 5.', 'Промпт-сайт-проекта.txt', 'PROMPT-COMPANY-WEBSITE.md'),
+personal_section=source.split('## 4.',1)[1].split('## 5.',1)[0]
+project_section=source.split('## 5.',1)[1].split('## 6.',1)[0]
+personal_prompts=re.findall(r'```text\n(.*?)\n```',personal_section,re.S)
+project_prompts=re.findall(r'```text\n(.*?)\n```',project_section,re.S)
+assert len(personal_prompts)==2 and len(project_prompts)==1
+for prompt,filename,markdown_file,note in [
+ (personal_prompts[0], 'Промпт-3D-аватар.txt', 'PROMPT-3D-AVATAR.md', 'Приложите своё чёткое фото лица и доработайте результат в чате до сохранения.'),
+ (personal_prompts[1], 'Промпт-сайт-визитка.txt', 'PROMPT-PERSONAL-WEBSITE.md', 'Приложите готовый 3D-аватар и отдельную обычную фотографию для блока «Обо мне».'),
+ (project_prompts[0], 'Промпт-сайт-проекта.txt', 'PROMPT-COMPANY-WEBSITE.md', 'Установите скиллы по гайду, заполните поля и приложите фотографии проекта.'),
 ]:
- prompt=source.split(section,1)[1].split('```')[1].removeprefix('text\n')
- (root/'guide'/filename).write_text(prompt)
- (here/markdown_file).write_text('# '+filename.removesuffix('.txt').replace('-', ' ')+'\n\nУстановите скиллы по гайду, заполните поля и приложите фотографии.\n\n```text\n'+prompt+'```\n')
+ (root/'guide'/filename).write_text(prompt+'\n')
+ (here/markdown_file).write_text('# '+filename.removesuffix('.txt').replace('-', ' ')+'\n\n'+note+'\n\n```text\n'+prompt+'\n```\n')
