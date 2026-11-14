@@ -5,7 +5,7 @@ here=Path(__file__).resolve().parent
 root=here.parent
 body=markdown.markdown((here/'GUIDE-TWO-SITES-V2.md').read_text(),extensions=['tables','fenced_code'])
 for heading, image, caption in [
- ('4. Сайт-визитка — два промпта по порядку', 'nikolskaya-1440.png', 'Сайт-визитка — Екатерина Никольская. Референс: готовый сайт Екатерины.'),
+ ('4. Сайт-визитка — сначала аватар, затем промпт сайта', 'nikolskaya-1440.png', 'Сайт-визитка — Екатерина Никольская. Референс: готовый сайт Екатерины.'),
  ('5. Сайт проекта — один цельный промпт', 'opora-1440.png', 'Сайт проекта — школа «Опора». Референс: готовый сайт «Опора».'),
 ]:
  title = '<h2>' + heading + '</h2>'
@@ -31,10 +31,9 @@ personal_section=source.split('## 4.',1)[1].split('## 5.',1)[0]
 project_section=source.split('## 5.',1)[1].split('## 6.',1)[0]
 personal_prompts=re.findall(r'```text\n(.*?)\n```',personal_section,re.S)
 project_prompts=re.findall(r'```text\n(.*?)\n```',project_section,re.S)
-assert len(personal_prompts)==2 and len(project_prompts)==1
+assert len(personal_prompts)==1 and len(project_prompts)==1
 for prompt,filename,markdown_file,note in [
- (personal_prompts[0], 'Промпт-3D-аватар.txt', 'PROMPT-3D-AVATAR.md', 'Приложите своё чёткое фото лица и полную картинку-образец с аватаром и текстом из гайда, затем доработайте результат в чате до сохранения.'),
- (personal_prompts[1], 'Промпт-сайт-визитка.txt', 'PROMPT-PERSONAL-WEBSITE.md', 'Приложите готовый 3D-аватар и отдельную обычную фотографию для блока «Обо мне».'),
+ (personal_prompts[0], 'Промпт-сайт-визитка.txt', 'PROMPT-PERSONAL-WEBSITE.md', 'Приложите готовый 3D-аватар и отдельную обычную фотографию для блока «Обо мне».'),
  (project_prompts[0], 'Промпт-сайт-проекта.txt', 'PROMPT-COMPANY-WEBSITE.md', 'Установите скиллы по гайду, заполните поля и приложите фотографии проекта.'),
 ]:
  (root/'guide'/filename).write_text(prompt+'\n')
