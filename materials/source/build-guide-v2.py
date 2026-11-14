@@ -4,6 +4,7 @@ from playwright.sync_api import sync_playwright
 here=Path(__file__).resolve().parent
 root=here.parent
 body=markdown.markdown((here/'GUIDE-TWO-SITES-V2.md').read_text(),extensions=['tables','fenced_code'])
+body=re.sub(r'<a\b(?![^>]*\btarget=)([^>]*\bhref="https?://[^"]+"[^>]*)>', r'<a\1 target="_blank" rel="noopener noreferrer">', body)
 for heading, image, caption in [
  ('4. Сайт-визитка — сначала аватар, затем промпт сайта', 'nikolskaya-1440.png', 'Сайт-визитка — Екатерина Никольская. Референс: готовый сайт Екатерины.'),
  ('5. Сайт проекта — один цельный промпт', 'opora-1440.png', 'Сайт проекта — школа «Опора». Референс: готовый сайт «Опора».'),
