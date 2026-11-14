@@ -4,7 +4,11 @@
 .install-shot{display:block;width:100%;height:auto;margin:24px 0;border:1px solid #47515c;break-inside:avoid}@media print{.install-shot{max-height:125mm;object-fit:contain}}
 
 .result-example{margin:30px 0 48px}.result-label{color:#91afff;font-size:13px;letter-spacing:.08em;font-weight:bold}.result-button{display:inline-block;padding:16px 24px;background:#91afff;color:#101212;font-weight:bold;text-decoration:none;border-radius:4px}.result-button:hover{background:#b4c8ff}.result-note{font-size:15px;color:#b4bdc5}.result-preview{display:block;width:100%;max-height:350px;object-fit:contain;background:#090909;margin-top:24px}@media print{.result-button{color:#101212!important}.result-preview{max-height:60mm}.result-note{font-size:9pt}}
+
+.tools{align-items:center;margin:18px 0 28px}.tools .copy{border-radius:4px}.copy:hover,.copy-link:hover{background:#c2d3ff}.copy:focus-visible,.copy-link:focus-visible{outline:3px solid #fff;outline-offset:3px}.copy-link{display:inline-block;vertical-align:middle;margin:3px 6px;padding:4px 8px;border:1px solid #91afff;border-radius:4px;background:transparent;color:#c5d7ff;font:600 12px/1.2 Arial,sans-serif;cursor:pointer;white-space:nowrap}.copy-guide-note{padding:18px 22px;border:1px solid #91afff;background:#1d242c;margin:22px 0 36px}.copy-guide-note p{margin:0}.copy-guide-note a{font-weight:bold}@media print{.copy-link{display:none}.copy-guide-note{break-inside:avoid;background:#1d242c!important;color:#f4f4ef!important;border-color:#91afff!important}.copy-guide-note a{color:#a7c5ff!important}}
 </style></head><body><main><div class="brand">@NIKOLSKAYA.AI · УРОК 01</div><div class="tools"><a href="guide/Гайд-и-все-промпты.txt">Скачать весь текст</a><a href="guide/Ваш-сайт-с-ИИ-полный-гайд.pdf">PDF для сохранения</a></div><h1>Ваш первый сайт с ИИ: визитка и сайт проекта</h1>
+<div class="copy-guide-note"><p><strong>Хотите скопировать промпт или ссылку одним нажатием?</strong> Откройте <a href="https://ekaterinaglowme.github.io/ai-sites-showcase/materials/">интерактивную версию гайда с кнопками копирования</a>. В ней можно скопировать каждый промпт и каждую ссылку отдельно либо всё сразу. В PDF текст можно выделить вручную; кнопки копирования работают на странице сайта.</p></div>
+
 <div class="result-example">
 <p class="result-label">ПОСМОТРИТЕ, ЧТО ПОЛУЧИТСЯ</p>
 <p>Вот сайт-визитка, который мы собрали по промпту из этого гайда: Марк Белов — вымышленный дизайнер. Откройте пример, посмотрите разделы и попробуйте кнопки.</p>
@@ -355,4 +359,67 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Критерий готовности:</strong> ваш сайт показывает именно ваши материалы, открывается локально, читается на мобильной ширине, а все кнопки ведут туда, куда вы ожидаете.</p></main><script>document.querySelectorAll('pre').forEach((pre,i)=>{const wrap=document.createElement('div');wrap.className='code-wrap';pre.before(wrap);const b=document.createElement('button');b.className='copy';b.type='button';b.textContent='Скопировать целиком';b.onclick=async()=>{try{await navigator.clipboard.writeText(pre.innerText);b.textContent='Скопировано ✓';setTimeout(()=>b.textContent='Скопировать целиком',2200)}catch(e){const range=document.createRange();range.selectNodeContents(pre);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);b.textContent='Текст выделен — скопируйте его'}};wrap.append(b,pre)});</script></body></html>
+<p><strong>Критерий готовности:</strong> ваш сайт показывает именно ваши материалы, открывается локально, читается на мобильной ширине, а все кнопки ведут туда, куда вы ожидаете.</p></main><script>async function copyText(value) {
+  if (navigator.clipboard && window.isSecureContext) {
+    try { await navigator.clipboard.writeText(value); return true; } catch (_) {}
+  }
+  const field = document.createElement('textarea');
+  field.value = value;
+  field.setAttribute('readonly', '');
+  field.style.cssText = 'position:fixed;left:-9999px;top:0';
+  document.body.append(field);
+  field.select();
+  let copied = false;
+  try { copied = document.execCommand('copy'); } catch (_) {}
+  field.remove();
+  return copied;
+}
+
+async function copyWithFeedback(button, value) {
+  const original = button.textContent;
+  const copied = await copyText(value);
+  button.textContent = copied ? 'Скопировано ✓' : 'Не удалось скопировать';
+  window.setTimeout(() => { button.textContent = original; }, 2400);
+}
+
+const codeBlocks = [...document.querySelectorAll('pre')];
+codeBlocks.forEach((pre) => {
+  const wrap = document.createElement('div');
+  wrap.className = 'code-wrap';
+  pre.before(wrap);
+  const button = document.createElement('button');
+  button.className = 'copy';
+  button.type = 'button';
+  button.textContent = 'Скопировать промпт целиком';
+  button.addEventListener('click', () => copyWithFeedback(button, pre.textContent.trim()));
+  wrap.append(button, pre);
+});
+
+const linkButtons = [];
+document.querySelectorAll('main a[href^="https://"], main a[href^="http://"]').forEach((link) => {
+  if (link.querySelector('img')) return;
+  const button = document.createElement('button');
+  button.className = 'copy-link';
+  button.type = 'button';
+  button.textContent = 'Скопировать ссылку';
+  button.setAttribute('aria-label', `Скопировать ссылку: ${link.textContent.trim()}`);
+  button.addEventListener('click', () => copyWithFeedback(button, link.href));
+  link.after(button);
+  linkButtons.push(link);
+});
+
+const tools = document.querySelector('.tools');
+if (tools) {
+  const allPrompts = document.createElement('button');
+  allPrompts.className = 'copy';
+  allPrompts.type = 'button';
+  allPrompts.textContent = 'Скопировать все промпты';
+  allPrompts.addEventListener('click', () => copyWithFeedback(allPrompts, codeBlocks.map((pre) => pre.textContent.trim()).join('\n\n──────────\n\n')));
+  const allLinks = document.createElement('button');
+  allLinks.className = 'copy';
+  allLinks.type = 'button';
+  allLinks.textContent = 'Скопировать все ссылки';
+  allLinks.addEventListener('click', () => copyWithFeedback(allLinks, [...new Set(linkButtons.map((link) => link.href))].join('\n')));
+  tools.append(allPrompts, allLinks);
+}
+</script></body></html>
