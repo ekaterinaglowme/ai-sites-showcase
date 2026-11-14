@@ -23,3 +23,10 @@ with sync_playwright() as p:
 d=fitz.open(target)
 for p in d:p.draw_rect(p.rect,color=None,fill=(16/255,18/255,18/255),overlay=False)
 d.save(str(target)+'.tmp');d.close();Path(str(target)+'.tmp').replace(target)
+
+# Synchronize every downloadable prompt from the canonical guide.
+source=(here/'GUIDE-TWO-SITES-V2.md').read_text()
+(here/'GUIDE-TWO-SITES-FROM-ZERO.md').write_text(source)
+for section, filename in [('## 4.', 'Промпт-сайт-визитка.txt'), ('## 5.', 'Промпт-сайт-проекта.txt')]:
+ prompt=source.split(section,1)[1].split('```')[1].removeprefix('text\n')
+ (root/'guide'/filename).write_text(prompt)
